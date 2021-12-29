@@ -1,4 +1,5 @@
 #include "types.h"
+#include "gdt.h"
 
 void printf(char* str)
 {
@@ -24,6 +25,8 @@ extern "C" void callConstructors()
 extern "C" void kernelMain(const void* multiboot_structure, uint32_t /*multiboot_magic*/)
 {
     printf("Hello Aadi! --- http://www.aadi.com");
+
+    GlobalDescriptorTable gdt;
 
     while(1);
 }
