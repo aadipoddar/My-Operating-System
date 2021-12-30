@@ -1,3 +1,4 @@
+
 #ifndef __PORT_H
 #define __PORT_H
 
@@ -13,7 +14,7 @@
             uint16_t portnumber;
     };
 
-
+    
     class Port8Bit : public Port
     {
         public:

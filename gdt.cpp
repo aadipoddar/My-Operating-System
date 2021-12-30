@@ -1,3 +1,4 @@
+
 #include "gdt.h"
 
 
@@ -97,3 +98,4 @@ uint32_t GlobalDescriptorTable::SegmentDescriptor::Limit()
 
     return result;
 }
+
